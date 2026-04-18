@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 230 25% 7%;
+    --foreground: 210 20% 92%;
+
+    --card: 230 22% 11%;
+    --card-foreground: 210 20% 92%;
+
+    --popover: 230 22% 10%;
+    --popover-foreground: 210 20% 92%;
+
+    --primary: 174 80% 50%;
+    --primary-foreground: 230 25% 7%;
+
+    --secondary: 270 60% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 230 18% 16%;
+    --muted-foreground: 220 15% 55%;
+
+    --accent: 260 50% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 230 20% 18%;
+    --input: 230 20% 18%;
+    --ring: 174 80% 50%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 230 25% 7%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* ── Section Layout ──────────────────────────────── */
+  .section-container {
+    @apply max-w-6xl mx-auto px-6 py-20 md:py-28;
+  }
+
+  .section-label {
+    @apply text-xs md:text-sm font-mono uppercase tracking-[0.3em] text-center mb-4;
+    background: linear-gradient(90deg, hsl(174 80% 50%), hsl(270 60% 60%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(174 80% 50%), hsl(270 60% 60%), hsl(320 70% 55%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* ── Glass Cards ──────────────────────────────────── */
+  .glass-card {
+    background: linear-gradient(135deg, hsla(230, 22%, 14%, 0.8), hsla(230, 22%, 10%, 0.6));
+    border: 1px solid hsla(230, 20%, 25%, 0.5);
+    @apply rounded-xl p-6 backdrop-blur-sm transition-all duration-300;
+  }
+
+  .glass-card:hover {
+    border-color: hsla(174, 80%, 50%, 0.3);
+    box-shadow: 0 8px 32px -8px hsla(174, 80%, 50%, 0.15),
+                0 0 0 1px hsla(174, 80%, 50%, 0.05);
+    transform: translateY(-2px);
+  }
+
+  /* ── Tech Tags ────────────────────────────────────── */
+  .tech-tag {
+    @apply text-xs font-mono px-3 py-1.5 rounded-full border transition-colors duration-200;
+    background: hsla(174, 60%, 50%, 0.08);
+    border-color: hsla(174, 60%, 50%, 0.25);
+    color: hsl(174, 60%, 65%);
+  }
+
+  .tech-tag:hover {
+    background: hsla(174, 60%, 50%, 0.15);
+    border-color: hsla(174, 60%, 50%, 0.5);
+  }
+
+  /* ── Social Icons ─────────────────────────────────── */
+  .social-icon {
+    @apply w-11 h-11 flex items-center justify-center rounded-full transition-all duration-300;
+    background: hsla(230, 20%, 18%, 0.8);
+    border: 1px solid hsla(230, 20%, 25%, 0.5);
+    color: hsl(220, 15%, 55%);
+  }
+
+  .social-icon:hover {
+    color: hsl(174, 80%, 50%);
+    border-color: hsla(174, 80%, 50%, 0.4);
+    background: hsla(174, 80%, 50%, 0.1);
+    box-shadow: 0 0 20px hsla(174, 80%, 50%, 0.2);
+  }
+
+  /* ── Navigation ───────────────────────────────────── */
+  .nav-link {
+    @apply text-sm font-medium transition-colors duration-200;
+    color: hsl(220, 15%, 60%);
+  }
+
+  .nav-link:hover {
+    color: hsl(174, 80%, 50%);
+  }
+
+  /* ── Hero Gradient Background ─────────────────────── */
+  .hero-bg {
+    background: radial-gradient(ellipse at 50% 0%, hsla(260, 50%, 20%, 0.4) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 50%, hsla(270, 50%, 15%, 0.3) 0%, transparent 50%),
+                radial-gradient(ellipse at 20% 80%, hsla(200, 50%, 12%, 0.3) 0%, transparent 50%),
+                linear-gradient(180deg, hsl(230, 25%, 7%) 0%, hsl(235, 25%, 5%) 100%);
+  }
+
+  /* ── Gradient Button ──────────────────────────────── */
+  .btn-gradient {
+    background: linear-gradient(135deg, hsl(270, 60%, 55%), hsl(174, 80%, 50%));
+    @apply px-7 py-3 rounded-full font-semibold text-white transition-all duration-300;
+    box-shadow: 0 4px 20px hsla(270, 60%, 55%, 0.3);
+  }
+
+  .btn-gradient:hover {
+    box-shadow: 0 6px 30px hsla(270, 60%, 55%, 0.5);
+    transform: translateY(-1px);
+  }
+
+  .btn-outline {
+    @apply px-7 py-3 rounded-full font-semibold transition-all duration-300;
+    border: 1px solid hsla(220, 15%, 40%, 0.5);
+    color: hsl(210, 20%, 85%);
+    background: hsla(230, 20%, 15%, 0.5);
+  }
+
+  .btn-outline:hover {
+    border-color: hsl(174, 80%, 50%);
+    color: hsl(174, 80%, 50%);
+    background: hsla(174, 80%, 50%, 0.08);
+  }
+
+  .btn-resume {
+    @apply px-6 py-3 rounded-full font-semibold transition-all duration-300;
+    border: 1px solid hsla(174, 80%, 50%, 0.4);
+    color: hsl(174, 80%, 50%);
+    background: hsla(174, 80%, 50%, 0.08);
+  }
+
+  .btn-resume:hover {
+    background: hsla(174, 80%, 50%, 0.15);
+    box-shadow: 0 0 20px hsla(174, 80%, 50%, 0.2);
+  }
+
+  /* ── Timeline ─────────────────────────────────────── */
+  .timeline-line {
+    background: linear-gradient(180deg, hsl(270, 60%, 55%), hsl(174, 80%, 50%));
+  }
+
+  .timeline-dot {
+    @apply w-3 h-3 rounded-full;
+    background: hsl(270, 60%, 55%);
+    box-shadow: 0 0 10px hsla(270, 60%, 55%, 0.5);
+  }
+
+  /* ── Scroll indicator ─────────────────────────── */
+  .scroll-indicator {
+    @apply w-6 h-10 rounded-full border-2;
+    border-color: hsla(220, 15%, 50%, 0.4);
+  }
+
+  .scroll-indicator::before {
+    content: '';
+    @apply block w-1.5 h-2.5 rounded-full mx-auto mt-2;
+    background: hsl(220, 15%, 50%);
+    animation: scrollBounce 2s infinite;
+  }
+
+  @keyframes scrollBounce {
+    0%, 100% { transform: translateY(0); opacity: 1; }
+    50% { transform: translateY(8px); opacity: 0.3; }
+  }
+
+  /* ── Certification check ──────────────────────── */
+  .cert-check {
+    color: hsl(145, 63%, 49%);
+  }
+}

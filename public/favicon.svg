@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4a537"/>
+      <stop offset="50%" style="stop-color:#f0c648"/>
+      <stop offset="100%" style="stop-color:#b8892a"/>
+    </linearGradient>
+    <linearGradient id="dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a3a3a"/>
+      <stop offset="100%" style="stop-color:#1a1a1a"/>
+    </linearGradient>
+    <linearGradient id="brush" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:0.8"/>
+      <stop offset="40%" style="stop-color:#d4a537;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#f0c648;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="64" height="64" rx="8" fill="#f5f5f5"/>
+  <!-- Brush stroke -->
+  <path d="M12 12 Q20 8 52 18 Q56 19 54 20 Q22 14 14 16 Z" fill="url(#brush)" opacity="0.7"/>
+  <path d="M18 10 Q32 6 50 14 Q54 16 48 15 Q30 10 20 13 Z" fill="url(#gold)" opacity="0.4"/>
+  <!-- S letter -->
+  <text x="14" y="48" font-family="Arial Black, Arial, sans-serif" font-size="40" font-weight="900" fill="url(#dark)" letter-spacing="-2">S</text>
+  <!-- V letter -->
+  <text x="34" y="48" font-family="Arial Black, Arial, sans-serif" font-size="40" font-weight="900" fill="url(#gold)" letter-spacing="-2">V</text>
+</svg>
