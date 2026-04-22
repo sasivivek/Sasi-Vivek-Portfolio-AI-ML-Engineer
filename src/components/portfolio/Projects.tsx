@@ -26,7 +26,7 @@ const projects = [
     description:
       "A machine learning project that predicts wine quality based on physicochemical properties. Implements multiple classification algorithms including Random Forest, SVM, and Gradient Boosting with feature engineering, cross-validation, and hyperparameter tuning for optimal accuracy.",
     tech: ["Python", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
-    github: "https://github.com/sasivivek/wine-quality-prediction",
+    github: "https://github.com/sasivivek/Wine-Quality-Prediction-Using-Machine-Learning",
     icon: "🍷",
   },
   {
@@ -35,7 +35,7 @@ const projects = [
     description:
       "A tracking system for monitoring space objects including satellites and orbital debris. Features real-time data processing, trajectory prediction algorithms, and visualization of orbital paths for space situational awareness.",
     tech: ["Python", "Data Analysis", "Visualization", "NumPy", "Matplotlib", "API"],
-    github: "https://github.com/sasivivek/space-object-tracking",
+    github: "https://github.com/sasivivek/Space-Object-Tracking",
     icon: "🛰️",
   },
 ];

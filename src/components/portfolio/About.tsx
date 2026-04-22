@@ -17,7 +17,7 @@ const About = () => (
         {/* Left: Bio text */}
         <div className="text-gray-400 leading-relaxed text-base space-y-4">
           <p>
-            I'm Sasi Vivek Neelapala — a passionate AI/ML Engineer and Full-Stack Developer with hands-on experience building production-grade intelligent systems. I specialize in Natural Language Processing, Deep Learning, Large Language Models, and crafting end-to-end web applications powered by AI. I thrive on turning complex problems into elegant, scalable solutions.
+            I'm Sasi Vivek Neelapala — a passionate AI/ML Engineer and Python Developer with hands-on experience building production-grade intelligent systems. I specialize in Natural Language Processing, Deep Learning, Large Language Models, and crafting end-to-end web applications powered by AI. I thrive on turning complex problems into elegant, scalable solutions.
           </p>
 
           {/* Stats */}
@@ -66,10 +66,10 @@ const About = () => (
               {"\n"}{"    "}self.<span style={{ color: "hsl(210, 50%, 75%)" }}>languages</span> = [
               {"\n"}{"      "}
               <span style={{ color: "hsl(145, 65%, 55%)" }}>"Python"</span>,{" "}
-              <span style={{ color: "hsl(145, 65%, 55%)" }}>"JavaScript"</span>,
+              <span style={{ color: "hsl(145, 65%, 55%)" }}>"TensorFlow"</span>,
               {"\n"}{"      "}
-              <span style={{ color: "hsl(145, 65%, 55%)" }}>"TypeScript"</span>,{" "}
-              <span style={{ color: "hsl(145, 65%, 55%)" }}>"SQL"</span>
+              <span style={{ color: "hsl(145, 65%, 55%)" }}>"PyTorch"</span>,{" "}
+              <span style={{ color: "hsl(145, 65%, 55%)" }}>"ML Pipelines"</span>
               {"\n"}{"    "}]
               {"\n"}{"    "}self.<span style={{ color: "hsl(210, 50%, 75%)" }}>passion</span> ={" "}
               <span style={{ color: "hsl(145, 65%, 55%)" }}>"Building AI that matters"</span>

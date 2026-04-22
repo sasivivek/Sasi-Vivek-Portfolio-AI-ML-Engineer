@@ -3,15 +3,6 @@ import { Calendar, MapPin } from "lucide-react";
 
 const experiences = [
   {
-    title: "AI Engineer",
-    company: "Human Resocia / Global IT Talent",
-    period: "July 2025 – March 2026",
-    location: "Japan, Remote",
-    description:
-      "Developed and deployed AI-powered solutions for global IT talent management. Worked on NLP pipelines, data analysis automation, and intelligent matching systems.",
-    icon: "🤖",
-  },
-  {
     title: "AI Technical Research Intern",
     company: "LangCoach Ltd",
     period: "June 2023 – September 2023",
