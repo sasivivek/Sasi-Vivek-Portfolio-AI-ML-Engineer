@@ -3,6 +3,15 @@ import { Calendar, MapPin } from "lucide-react";
 
 const experiences = [
   {
+    title: "AI Engineer",
+    company: "Human Resocia / Global IT Talent",
+    period: "July 2025 – March 2026",
+    location: "Tokyo, Remote",
+    description:
+      "Engineered a Key Information Extraction (KIE) system to detect Fraud, Waste, and Abuse (FWA) in health insurance documents using a Vision-LLM pipeline with vLLM, achieving a 2–3% fraud detection true positive rate. Architected a document AI pipeline using YOLO, PaddleOCR, and Table Transformer, integrating Qwen 2.5 VLM for multimodal document understanding and deploying a MinIO-based model management system to support HEDIS compliance prediction (84% accuracy).",
+    icon: "🤖",
+  },
+  {
     title: "AI Technical Research Intern",
     company: "LangCoach Ltd",
     period: "June 2023 – September 2023",
