@@ -8,7 +8,7 @@ const experiences = [
     period: "July 2025 – March 2026",
     location: "Tokyo, Remote",
     description:
-      "Engineered a Key Information Extraction (KIE) system to detect Fraud, Waste, and Abuse (FWA) in health insurance documents using a Vision-LLM pipeline with vLLM, achieving a 2–3% fraud detection true positive rate. Architected a document AI pipeline using YOLO, PaddleOCR, and Table Transformer, integrating Qwen 2.5 VLM for multimodal document understanding and deploying a MinIO-based model management system to support HEDIS compliance prediction (84% accuracy).",
+      "Built AI pipelines for fraud detection in health insurance using Vision-LLMs and vLLM. Developed a document AI system with YOLO, PaddleOCR, and Qwen 2.5 VLM for HEDIS compliance prediction (84% accuracy).",
     icon: "🤖",
   },
   {
